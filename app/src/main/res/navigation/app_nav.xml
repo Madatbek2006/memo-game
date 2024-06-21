@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/playScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.memogame.presenter.screen.home.HomeScreen"
+        android:label="HomeScreen"
+        tools:layout="@layout/screen_home">
+        <action
+            app:popUpTo="@id/homeScreen"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_homeScreen_to_mainScreen"
+            app:destination="@id/mainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.memogame.presenter.screen.main.MainScreen"
+        android:label="MainScreen"
+        tools:layout="@layout/screen_main"/>
+    <fragment
+        android:id="@+id/playScreen"
+        android:name="com.example.memogame.presenter.screen.play.PlayScreen"
+        android:label="PlayScreen"
+        tools:layout="@layout/screen_play">
+        <action
+
+            android:id="@+id/action_playScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+        <action
+            android:id="@+id/action_playScreen_to_infoScreen"
+            app:destination="@id/infoScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoScreen"
+        android:name="com.example.memogame.presenter.screen.info.InfoScreen"
+        android:label="InfoScreen"
+        tools:layout="@layout/screen_info"/>
+</navigation>

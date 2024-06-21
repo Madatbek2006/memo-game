@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/con"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="64dp"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/bg_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="#50AFFB" />-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="#F4AAFF" />-->
+
+
+    </LinearLayout>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:cardBackgroundColor="@android:color/transparent"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/con"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/con"-->
+<!--        app:layout_constraintRight_toRightOf="@id/con"-->
+<!--        app:layout_constraintTop_toTopOf="@id/con">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/bg_dialog"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <ImageView
+        android:id="@+id/level_up"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:elevation="2dp"
+        android:src="@drawable/level_up"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/star"
+        android:backgroundTint="#302D2D"
+        app:layout_constraintRight_toLeftOf="@id/star2_black"
+        app:layout_constraintTop_toTopOf="@id/star2_black" />
+
+    <ImageView
+        android:id="@+id/star2_black"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/star"
+        android:backgroundTint="#302D2D"
+        android:elevation="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level_up" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/star"
+        android:backgroundTint="#302D2D"
+        android:elevation="3dp"
+        app:layout_constraintLeft_toRightOf="@id/star2_black"
+        app:layout_constraintTop_toTopOf="@id/star2_black" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="3dp"
+        android:padding="2dp"
+        android:src="@drawable/star"
+        app:layout_constraintRight_toLeftOf="@id/star2"
+        app:layout_constraintTop_toTopOf="@id/star2" />
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:elevation="3dp"
+        android:padding="2dp"
+        android:src="@drawable/star"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level_up" />
+
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="3dp"
+        android:padding="2dp"
+        android:src="@drawable/star"
+        app:layout_constraintLeft_toRightOf="@id/star2"
+        app:layout_constraintTop_toTopOf="@id/star2" />
+
+    <TextView
+        android:id="@+id/congratulations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="3dp"
+        android:text="Congratulations!"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/star2_black" />
+    <TextView
+        android:id="@+id/time_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="3dp"
+        android:text="Time:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/congratulations"
+        app:layout_constraintTop_toBottomOf="@id/congratulations" />
+    <TextView
+        android:id="@+id/attempt_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="3dp"
+        android:text="Attempt:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/congratulations"
+        app:layout_constraintTop_toBottomOf="@id/time_txt" />
+    <TextView
+        android:id="@+id/attempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="@id/congratulations"
+        app:layout_constraintTop_toTopOf="@id/attempt_txt"
+        app:layout_constraintBottom_toBottomOf="@id/attempt_txt"/>
+
+    <Chronometer
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="@id/congratulations"
+        app:layout_constraintTop_toTopOf="@id/time_txt"
+        app:layout_constraintBottom_toBottomOf="@id/time_txt"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/home"
+        style="@style/buttonStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_buttons"
+        android:elevation="3dp"
+        android:inputType="text"
+        android:text="Home"
+        android:backgroundTint="#630D71"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/con"
+        app:layout_constraintRight_toLeftOf="@id/next" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next"
+        style="@style/buttonStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_buttons"
+        android:elevation="3dp"
+        android:inputType="text"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/home"
+        app:layout_constraintRight_toRightOf="@id/con" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_fileName="anim_win.json"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

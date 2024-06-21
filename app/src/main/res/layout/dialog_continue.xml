@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content">-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/con"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginHorizontal="32dp"-->
+<!--        android:layout_marginTop="64dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="12dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="#C761D7" />-->
+<!--    </LinearLayout>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:cardBackgroundColor="@android:color/transparent"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/con"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/con"-->
+<!--        app:layout_constraintRight_toRightOf="@id/con"-->
+<!--        app:layout_constraintTop_toTopOf="@id/con">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/bg_dialog"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <LinearLayout-->
+<!--        android:elevation="3dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/con"-->
+<!--        app:layout_constraintRight_toRightOf="@id/con"-->
+<!--        android:layout_marginVertical="64dp"-->
+<!--        app:layout_constraintTop_toTopOf="@id/con"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/home"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Don't rush!"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="32sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/con"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="why don't you keep playing?"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/con"-->
+<!--            app:layout_constraintTop_toTopOf="@id/con"/>-->
+<!--    </LinearLayout>-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/home"-->
+<!--        style="@style/buttonStyle"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginHorizontal="24dp"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        android:background="@drawable/bg_buttons"-->
+<!--        android:elevation="3dp"-->
+<!--        android:inputType="text"-->
+<!--        android:text="Home"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/con"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/continue_game" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/continue_game"-->
+<!--        style="@style/buttonStyle"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginHorizontal="24dp"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        android:background="@drawable/bg_buttons"-->
+<!--        android:elevation="3dp"-->
+<!--        android:inputType="text"-->
+<!--        android:text="Continue"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/home"-->
+<!--        app:layout_constraintRight_toRightOf="@id/con" />-->
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/lottie"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:lottie_fileName="anim_win.json"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"/>-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="8dp"
+    android:layout_marginHorizontal="24dp"
+    android:background="@drawable/bg_card2"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/status"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#630D71"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="WARNING!"
+                android:textSize="24sp"/>
+            <ImageView
+                android:id="@+id/check"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center|end"
+                android:background="@drawable/plus"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/white"
+                android:rotation="45"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/status"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="If you exit, the next time the game\n start again"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exit"
+            style="@style/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_dialog2"
+            android:backgroundTint="#630D71"
+            android:paddingHorizontal="32dp"
+            android:elevation="3dp"
+            android:inputType="text"
+            android:text="Exit"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@id/txt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
